@@ -3,7 +3,7 @@
 Console.WriteLine("Please input number");
 int number = Convert.ToInt32(Console.ReadLine());
 
-int[] array = new int[4];
+int[] array = new int[15];
 string answer = "no";
 
 for (int i = 0; i < array.Length; i++)
@@ -15,6 +15,7 @@ for (int i = 0; i < array.Length; i++)
     if (array[i] == number)
     {
         answer = "yes";
+        break;
     }
 }
 
