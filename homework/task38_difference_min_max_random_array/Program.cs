@@ -1,15 +1,15 @@
 ﻿// create random array
 // find difference between min and max
 
-int[] array = new int[new Random().Next(5, 8)];
-int max = array[0];
-int min = 1000;
+double[] array = new double[new Random().Next(5, 8)];
+double max = array[0];
+double min = 1000;
 
 void FillArray()
 {
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = new Random().Next(1, 100);
+        array[i] = new Random().Next(1, 100) + new Random(2).NextDouble();
     }
 }
 
@@ -35,8 +35,8 @@ void MinMax()
         }
     }
     Console.WriteLine();
-    // Console.WriteLine(min);
-    // Console.WriteLine(max);
+    Console.WriteLine(min);
+    Console.WriteLine(max);
     Console.WriteLine(max - min);
 }
 
